@@ -17,10 +17,9 @@ sans-serif;
     z-index: 100;
 
     .navbar-brand {
-        color: white;
-        transform: rotate(-90deg);
-        font-weight: 900;
-    }
+        float: left !important;
+        margin-top: 15px !important;
+      }
 
     span i {
         color: white;
