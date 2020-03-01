@@ -1,13 +1,19 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './Navbar.scss';
 
 const Navbar = () => {
-    return(
+    return (
         <header className="header-transparent">
             <nav className="navbar navbar-expand-lg text-center">
                 <div className="container">
-                    <Link to="/" className="navbar-brand">A.</Link>
+                    <Link to="/" className="navbar-brand" href="#home">
+                        <img
+                            alt=""
+                            src="https://techguytn.com/tribe/logo-dark-25.png/"
+                            width="155"
+                            height="25"
+                        ></img></Link>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon">
                             <i className="fi-xwluxl-three-bars-wide"></i>
@@ -31,7 +37,7 @@ const Navbar = () => {
                                 <Link to="/contact" className="nav-link">Contact</Link>
                             </li>
                         </ul>
-                    </div> 
+                    </div>
                 </div>
             </nav>
         </header>
