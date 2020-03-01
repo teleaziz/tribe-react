@@ -42,7 +42,7 @@
       "last 1 safari version"
     ]
   },
-  "description": "A Creative Agency website built with React and Redux. Includes team, portfolio, services pages and a contact form",
+  "description": "TribeTN.com website built with React and Redux. Includes team, portfolio, services pages and a contact form",
   "main": "index.js",
   "devDependencies": {},
   "repository": {
