@@ -1,8 +1,8 @@
-### npm i -g npm-check-updates
+### `npm i -g npm-check-updates`
 
-### npm-check-updates -u
+### `npm-check-updates -u`
 
-### npm install
+### `npm install`
 
 ### `npm start`
 
