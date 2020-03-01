@@ -1,6 +1,6 @@
 {
-  "name": "TribeTN",
-  "version": "0.1.0",
+  "name": "tribetn",
+  "version": "4.2.0",
   "private": true,
   "homepage": "https://techguytn.github.io",
   "dependencies": {
@@ -41,5 +41,21 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "description": "A Creative Agency website built with React and Redux. Includes team, portfolio, services pages and a contact form",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TechGuyTN/tribe-react.git"
+  },
+  "keywords": [
+    "react",
+    "agency"
+  ],
+  "author": "Aaron Holt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TechGuyTN/tribe-react/issues"
   }
 }
