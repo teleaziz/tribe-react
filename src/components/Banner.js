@@ -1,17 +1,20 @@
 import React from 'react';
-import Logo from '../img/about.png';
+import Logo from '../img/like.png';
 import '../App.scss';
 
 function Banner () {
-   return (
+    
+    return (
       <div className="banner">
           <div className="container">
               <div className="row">
                 <div className="col-xl-5 col-lg-6">
                     <div className="banner-text text-left mt-4">
                         <h1 className="title-font">
-                            Solutions to simplify your
-                            <span className="text-customer"> business</span> 
+                            We help
+                            your
+                            business
+                            <span className="text-customer"> grow</span> 
                         </h1>
                     </div>
                 </div>
