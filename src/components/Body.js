@@ -15,9 +15,9 @@ const Body = () => {
                         <div className="col-12">
                             <div className="about-us-text-area mb-5 mt-5">
                                 <h2 className="about-us-text title-font-3">
-                                    We specialize in telling brand stories 
+                                We are Tribe Tennessee, specializing in the design 
                                     <br/>
-                                    along the entire customer journey.
+                                    and development of unique, result-driven experiences.
                                 </h2>
                                 <p className="mt-4 mb-4 title-font-2">
                                     Our end-to-end approach helps you define 
