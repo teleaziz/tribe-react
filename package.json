@@ -1,8 +1,8 @@
 {
-  "name": "agency",
+  "name": "tribe-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://bscodes.github.io/react-agency-website/",
+  "homepage": "https://tribetn.com",
   "dependencies": {
     "@builder.io/react": "^1.0.56",
     "gh-pages": "^2.1.1",
@@ -37,5 +37,17 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "description": "## [View Demo](https://bscodes.github.io/react-agency-website/#/)",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TechGuyTN/tribe-react.git"
+  },
+  "author": "Aaron Holt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TechGuyTN/tribe-react/issues"
   }
 }
