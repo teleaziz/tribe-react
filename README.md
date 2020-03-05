@@ -1,87 +1,65 @@
-# Creative Agency Website With React
+# Builder React Starter
 
-## [View Demo](https://bscodes.github.io/react-agency-website/#/)
+This starter project will get you up and running fast with a React project with Builder.io visual page building + creation that you can customize and deploy anywhere.
 
-A Creative Agency website built with React and Redux. Includes team, portfolio, services pages and a contact form
+## Quick start
 
-### Technologies Used
+### Prerequisites
 
-- ReactJS
-- JavaScript (ES6)
-- HTML5
-- Bootstrap 4 CSS framework
-- Redux
-- Sass
-- React Router
-- Git
-- GitHub
-- Npm
+Be sure you have [node.js](https://nodejs.org/en/) installed on your system
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Download and install
 
-## Available Scripts
+```
+git clone https://github.com/BuilderIO/builder.git
+cd builder/starters/react
+npm install
+```
 
-In the project directory, you can run:
+### Make a free Builder.io account
 
-### `npm start`
+Create a free account at [builder.io](https://builder.io) and grab your public API key from [builder.io/account/organization](https://builder.io/account/organization)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Paste your API key at the top of [src/App.js](src/App.js#5) for the value of the `API_KEY` variable
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### Run the dev server
 
-### `npm test`
+```
+npm start
+```
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This will host your site at http://localhost:3000
 
-### `npm run build`
+### Create content in Builder
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Head back over to [builder.io](https://builder.io), and create a new page with url /page-1 and publish it (green button in top right corner)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+<img src="https://i.imgur.com/phgqvQa.jpg" alt="Creating a page">
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Now go over to http://localhost:3000 to see your content live!
 
-### `npm run eject`
+### Deploy
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+You can deploy your site with [many services](https://facebook.github.io/create-react-app/docs/deployment)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+For a quick and easy deployment, create an account at [firebase.com](https://firebase.com)
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Then from this project directory, run
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```
+npm install -g firebase-tools
+firebase login
+firebase init # be sure to choose "hosting" when prompted
+npm run build
+firebase deploy
+```
 
-## Learn More
+And you are live!
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+For more detailed deployment instructions and options [see here](https://facebook.github.io/create-react-app/docs/deployment)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Additional information
 
-### Code Splitting
+If you run into any issues here, don't hesitate to create a [Github issue](https://github.com/BuilderIO/builder/issues) or even email me directly at help@builder.io
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+This project wasa created by [create-react-app](https://facebook.github.io/create-react-app/docs/getting-started). For more information on commands and usage see their [docs here](https://facebook.github.io/create-react-app/docs/getting-started)
