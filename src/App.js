@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { BuilderComponent } from '@builder.io/react';
 
-const API_KEY = 'bb209db71e62412dbe0114bdae18fd15';
+const API_KEY = '073680d998ed4e79834480ca32359926';
 
 function App() {
   return (
@@ -16,13 +16,16 @@ function App() {
             <Link to="/about">About</Link>
           </li>
           <li>
-            <Link to="/topics">Topics</Link>
+            <Link to="/services">Services</Link>
           </li>
           <li>
-            <Link to="/page-1">Builder Page 1</Link>
+            <Link to="/portfolio">Portfolio</Link>
           </li>
           <li>
-            <Link to="/page-2">Builder Page 2</Link>
+            <Link to="/team">Team</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
 
