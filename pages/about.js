@@ -5,7 +5,7 @@ import { builder, BuilderComponent } from '@builder.io/react';
 import '@builder.io/widgets';
 import Nav from '../components/nav';
 
-const BUILDER_API_KEY = 'YOUR_KEY';
+const BUILDER_API_KEY = '073680d998ed4e79834480ca32359926';
 builder.init(BUILDER_API_KEY);
 
 class CatchallPage extends React.Component {
