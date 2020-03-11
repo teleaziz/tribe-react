@@ -9,6 +9,10 @@ function App() {
     <Router>
       <Route exact path="/" component={Home} />
       <Route path="/about" component={About} />
+      <Route path="/services" component={Services} />
+      <Route path="/portfolio" component={Portfolio} />
+      <Route path="/team" component={Team} />
+      <Route path="/contact" component={Contact} />
       <Route render={({ location }) => <CatchallPage key={location.key} />} />
     </Router>
   );
@@ -23,6 +27,38 @@ function Home() {
 }
 
 function About() {
+  return (
+    <div>
+      <h2></h2>
+    </div>
+  );
+}
+
+function Services() {
+  return (
+    <div>
+      <h2></h2>
+    </div>
+  );
+}
+
+function Portfolio() {
+  return (
+    <div>
+      <h2></h2>
+    </div>
+  );
+}
+
+function Team() {
+  return (
+    <div>
+      <h2></h2>
+    </div>
+  );
+}
+
+function Contact() {
   return (
     <div>
       <h2></h2>
