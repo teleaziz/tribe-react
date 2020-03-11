@@ -51,11 +51,11 @@ const Nav = () => (
         justify-content: space-between;
       }
       nav > ul {
-        padding: 6px 20px;
+        padding: 20px 20px;
       }
       li {
         display: flex;
-        padding: 6px 8px;
+        padding: 6px 10px;
       }
       a {
         color: white;
