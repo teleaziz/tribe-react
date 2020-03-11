@@ -7,34 +7,9 @@ const API_KEY = '073680d998ed4e79834480ca32359926';
 function App() {
   return (
     <Router>
-      <div>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/services">Services</Link>
-          </li>
-          <li>
-            <Link to="/portfolio">Portfolio</Link>
-          </li>
-          <li>
-            <Link to="/team">Team</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-        </ul>
-
-        <hr />
-
-        <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-        <Route render={({ location }) => <CatchallPage key={location.key} />} />
-      </div>
+      <Route exact path="/" component={Home} />
+      <Route path="/about" component={About} />
+      <Route render={({ location }) => <CatchallPage key={location.key} />} />
     </Router>
   );
 }
@@ -42,7 +17,7 @@ function App() {
 function Home() {
   return (
     <div>
-      <h2>Home</h2>
+      <h2></h2>
     </div>
   );
 }
@@ -50,7 +25,7 @@ function Home() {
 function About() {
   return (
     <div>
-      <h2>About</h2>
+      <h2></h2>
     </div>
   );
 }
@@ -72,8 +47,8 @@ class CatchallPage extends React.Component {
         <div className="loading">Loading...</div>
       </BuilderComponent>
     ) : (
-      <NotFound />
-    );
+        <NotFound />
+      );
   }
 }
 
