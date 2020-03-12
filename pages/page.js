@@ -14,32 +14,40 @@ class CatchallPage extends React.Component {
     const path = asPath.split('?')[0];
     builder.setUserAttributes({ urlPath: path });
 
-    // 'page' is the model name for your pages. If you made a new model with a different name,
-    // such as 'my-page', use `builder.get('my-page', ...)
-    const page = await builder.get('page', { req, res }).promise();
+    const [page, header, footer] = await Promise.all([
+      // 'page' is the model name for your pages. If you made a new model with a different name,
+      // such as 'my-page', use `builder.get('my-page', ...)
+      builder.get('page', { req, res }).promise(),
+      // 'header' is the model name for your header
+      builder.get('header', { req, res }).promise(),
+      // 'footer' is the model name for your footer
+      builder.get('footer', { req, res }).promise(),
+    ]);
 
     if (res && !page) {
       res.statusCode = 404;
     }
-    return { builderPage: page };
+    return { builderPage: page, header, footer };
   }
 
   render() {
-    const page = this.props.builderPage;
+    const { builderPage, header, footer } = this.props;
     return (
       <>
         <Nav />
+    { header && <BuilderComponent name="header" content={header} /> }
         <div>
-          {page ? (
+          {builderPage ? (
             <>
               <Head>
-                <title>{page.data.title}</title>
+                <title>{builderPage.data.title}</title>
               </Head>
-              <BuilderComponent name="page" content={page} />
+              <BuilderComponent name="page" content={builderPage} />
             </>
           ) : (
             <div>Page not found!</div>
           )}
+      { footer && <BuilderComponent name="footer" content={footer} /> }
         </div>
       </>
     );
